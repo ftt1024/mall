@@ -18,10 +18,10 @@ import org.springframework.validation.BindingResult;
 @Order(2)
 public class BindingResultAspect {
     @Pointcut("execution(public * com.macro.mall.controller.*.*(..))")
-    public void BindingResult() {
+    public void bindingResult() {
     }
 
-    @Around("BindingResult()")
+    @Around("bindingResult()")
     public Object doAround(ProceedingJoinPoint joinPoint) throws Throwable {
         Object[] args = joinPoint.getArgs();
         for (Object arg : args) {

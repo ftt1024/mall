@@ -81,7 +81,7 @@ public class CmsPrefrenceArea implements Serializable {
         sb.append(", subTitle=").append(subTitle);
         sb.append(", sort=").append(sort);
         sb.append(", showStatus=").append(showStatus);
-        sb.append(", pic=").append(pic);
+        sb.append(", pic=").append(new String(pic));
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

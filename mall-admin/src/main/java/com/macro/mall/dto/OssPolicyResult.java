@@ -10,6 +10,7 @@ public class OssPolicyResult {
     private String signature;
     private String dir;
     private String host;
+    private String callback;
 
     public String getAccessKeyId() {
         return accessKeyId;
@@ -49,5 +50,13 @@ public class OssPolicyResult {
 
     public void setHost(String host) {
         this.host = host;
+    }
+
+    public String getCallback() {
+        return callback;
+    }
+
+    public void setCallback(String callback) {
+        this.callback = callback;
     }
 }
